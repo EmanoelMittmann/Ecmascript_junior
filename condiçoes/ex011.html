@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+</head>
+<body>
+   
+    <h1>Sistema de nomes das Nacionalidades</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga cum quae ex eos asperiores dolorem consequatur molestiae obcaecati laborum eligendi est, illum omnis perspiciatis facere maiores ratione aperiam minima. Pariatur.
+    </p>
+    Digite sua Nacionalidade <input type="text" name="ncl" id="ncl" >.
+    <input type="button" value="verificar" onclick="clicar()" > 
+    <div id="res">
+
+    </div>
+    <script>
+        function clicar(){
+            var Br = "brasileiro"
+            var BR = "brasileira"
+            var ncl = window.document.querySelector('input#ncl')
+            var res = window.document.querySelector('div#res')
+            var nac = String(ncl.value)
+            if(nac == Br || nac == BR){
+                res.innerHTML='Sua nacionalidade é brasileira'
+                
+            }else{
+                
+                res.innerHTML='Voce é estrangeiro'
+                
+            }
+
+        }
+
+    </script>    
+</body>
+</html>
